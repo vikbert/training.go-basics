@@ -150,12 +150,41 @@ func printNames(intro string, names ...string) {
 	fmt.Println(names)
 }
 
-func main() {
-	numbers, count := fibonacci(50)
-	fmt.Println(numbers)
-	fmt.Println(count)
-}
-
 func fibonacci(max int) (string, int) {
 	return "", 0
+}
+
+func funcVars() {
+	// define function type
+	type filterFunc func(string) bool
+	// implement it
+	var isEmpty filterFunc = func(s string) bool {
+		return len(s) == 0
+	}
+	// call it
+	fmt.Println(isEmpty(""), isEmpty("abc"))
+}
+
+type filterFunc func(string) bool
+
+func closure() {
+	atLeastThree := createFilterFunc(3)
+	fmt.Println(atLeastThree("ab"), atLeastThree("abc"))
+}
+func createFilterFunc(length int) filterFunc {
+	return func(s string) bool {
+		return len(s) >= length
+	}
+}
+
+func deferDemo() {
+	defer fmt.Println("later")
+	fmt.Println("Sooner or")
+	defer func() {
+		fmt.Println("you're gonna be fine")
+	}()
+}
+
+func main() {
+	deferDemo()
 }
