@@ -1,3 +1,3 @@
-module local/020/structs
+module local/020/functions
 
 go 1.20
