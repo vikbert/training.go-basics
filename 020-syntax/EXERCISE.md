@@ -70,8 +70,8 @@ Schreiben Sie eine switch Anweisung, die für den heutigen Tag ausgibt, ob es Wo
 
 ## h) Strings und Runes
 
-Für einen beliebigen String wie z.B. "Heute lerne ich Go" soll die Camel-Case
-Variante in der Form "HeuteLerneIchGo" berechnet werden.
+Für einen beliebigen String wie z.B. "Heute lerne ich Go" soll die Camel-Case-Variante in der Form "HeuteLerneIchGo"
+berechnet werden.
 
 Schreiben Sie die dafür notwendige Funktion.
 
