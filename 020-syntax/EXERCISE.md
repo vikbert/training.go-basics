@@ -55,6 +55,17 @@ die Summe aller Zahlen zurückgibt.
 Schreiben Sie eine Funktion, welche für das Array von Zahlen (siehe oben)
 nun sowohl den kleinsten wie auch den größten Wert zurückgibt.
 
+## g) Switch
+
+### Wochenende?
+
+Wir wollen wissen, ob heute Wochenende ist (okay, recht unwahrscheinlich während des Trainings). 
+
+Dazu bitte im StdLib Package "time" (https://pkg.go.dev/time) die Funktion `Now()` und `Weekday()` anschauen. Ebenso gibt es dort Konstanten für
+die einzelnen Wochentage.
+
+Schreiben Sie eine switch Anweisung, die für den heutigen Tag ausgibt, ob es Wochenende ist oder nicht.
+
 ## h) Strings und Runes
 
 Für einen beliebigen String wie z.B. "Heute lerne ich Go" soll die Camel-Case 
