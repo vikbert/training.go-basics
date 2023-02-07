@@ -61,16 +61,16 @@ nun sowohl den kleinsten wie auch den größten Wert zurückgibt.
 
 ## g) Switch
 
-Wir wollen wissen, ob heute Wochenende ist (okay, recht unwahrscheinlich während des Trainings). 
+Wir wollen wissen, ob heute Wochenende ist (okay, recht unwahrscheinlich während des Trainings).
 
-Dazu bitte im StdLib Package "time" (https://pkg.go.dev/time) die Funktion `Now()` und `Weekday()` anschauen. Ebenso gibt es dort Konstanten für
-die einzelnen Wochentage.
+Dazu bitte im StdLib Package "time" (https://pkg.go.dev/time) die Funktion `Now()` und `Weekday()` anschauen. Ebenso
+gibt es dort Konstanten für die einzelnen Wochentage.
 
 Schreiben Sie eine switch Anweisung, die für den heutigen Tag ausgibt, ob es Wochenende ist oder nicht.
 
 ## h) Strings und Runes
 
-Für einen beliebigen String wie z.B. "Heute lerne ich Go" soll die Camel-Case 
+Für einen beliebigen String wie z.B. "Heute lerne ich Go" soll die Camel-Case
 Variante in der Form "HeuteLerneIchGo" berechnet werden.
 
 Schreiben Sie die dafür notwendige Funktion.
