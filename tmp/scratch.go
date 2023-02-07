@@ -270,3 +270,23 @@ func makeSlice() {
 	fmt.Printf("%q\n", strSlice)
 	fmt.Printf("length: %d, capacity: %d", len(strSlice), cap(strSlice))
 }
+
+func ifDemo() {
+	if res, err := connect(); err == nil {
+		handleError(err)
+	} else {
+		doStuffWithResult(res)
+	}
+}
+
+func doStuffWithResult(res string) {
+
+}
+
+func handleError(err error) {
+
+}
+
+func connect() (string, error) {
+	return "", nil
+}
