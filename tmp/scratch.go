@@ -238,14 +238,6 @@ func (r *rectangle) setWidth(w int) {
 	(*r).width = w
 }
 
-func main() {
-	makeSlice()
-	//r := rectangle{3, 4}
-	//fmt.Println(r.area())
-	//r.setWidth(10)
-	//fmt.Println(r.area())
-}
-
 func sliceDemo() {
 	intSlice := []int{1, 2, 3}
 	fmt.Println(intSlice)
@@ -269,6 +261,24 @@ func makeSlice() {
 	var strSlice []string = make([]string, 2, 10)
 	fmt.Printf("%q\n", strSlice)
 	fmt.Printf("length: %d, capacity: %d", len(strSlice), cap(strSlice))
+}
+
+func switchDemo() {
+	n := 43
+	switch mod := n % 2; mod {
+	case 0:
+		fmt.Printf("%d is an even number\n", n)
+	default:
+		fmt.Printf("%d is NOT an even number\n", n)
+	}
+}
+
+func main() {
+	switchDemo()
+	//r := rectangle{3, 4}
+	//fmt.Println(r.area())
+	//r.setWidth(10)
+	//fmt.Println(r.area())
 }
 
 func ifDemo() {
