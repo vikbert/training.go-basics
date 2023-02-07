@@ -35,7 +35,11 @@ erfolgt.
 
 ## c) Types
 
-### Umwandlung cm in m
+Wir wollen Zentimeter in Meter umwandeln können -- und dafür eigene Typen haben, wie z.B.
+
+````go
+type centimeter int
+````
 
 Deklarieren Sie eigene Typen für `centimeter` und `meter`. Wo muss die Deklaration erfolgen?
 
@@ -56,8 +60,6 @@ Schreiben Sie eine Funktion, welche für das Array von Zahlen (siehe oben)
 nun sowohl den kleinsten wie auch den größten Wert zurückgibt.
 
 ## g) Switch
-
-### Wochenende?
 
 Wir wollen wissen, ob heute Wochenende ist (okay, recht unwahrscheinlich während des Trainings). 
 
@@ -94,8 +96,6 @@ Erstellen Sie die dafür nötigen Structs. Diese sollen nur englische Attribute 
 Legen Sie dann eine Struct Instanz mit den obigen Daten an.
 
 ## j) variadische Funktionen
-
-### Statistiken
 
 Ähnlich der Anzeige von Statistiken in Excel, wenn mehrere Zellen selektiert sind, benötigen wir
 eine Funktion, die für eine beliebige Anzahl an `int` Werten die folgenden Statistiken berechnet:
