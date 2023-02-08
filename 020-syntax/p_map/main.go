@@ -3,21 +3,22 @@ package main
 import "fmt"
 
 type book struct {
-	isbn   string
-	author string
-	year   uint16
+	isbn      string
+	author    string
+	publisher string
 }
 
 func main() {
 	fmt.Println("Maps:")
 	books := [5]book{
-		{"123-456", "A. Hendker", 2002},
-		{"345-476", "T. Müller", 2009},
-		{"133-898", "I. Wellmann", 2017},
-		{"423-001", "I. Wellmann", 2018},
-		{"193-753", "T, Müller", 2017},
+		{"123-456", "A. Hendker", "Wort und Bild Verlag"},
+		{"345-476", "T. Müller", "Random House"},
+		{"133-898", "I. Wellmann", "Random House"},
+		{"423-001", "I. Wellmann", "Random House"},
+		{"193-753", "T, Müller", "Wort und Bild Verlag"},
 	}
 	fmt.Println(books)
 	//groupBooksByIsbn()
 	//groupBooksByAuthor()
+	//groupBooksByPublisher()
 }
