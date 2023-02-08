@@ -70,12 +70,18 @@ Schreiben Sie eine switch Anweisung, die für den heutigen Tag ausgibt, ob es Wo
 
 ## h) Strings und Runes
 
+### CamelCase
+
 Für einen beliebigen String wie z.B. "Heute lerne ich Go" soll die Camel-Case-Variante in der Form "HeuteLerneIchGo"
 berechnet werden.
 
 Schreiben Sie die dafür notwendige Funktion.
 
 Hilfreich sind die StdLib Packages "strings" und "unicode".
+
+### kebap-case / snake-case
+
+Ergänzend können Sie eine Transformation in Kebap Case vornehmen: "heute-lerne-ich-go"
 
 ## i) Structs
 
