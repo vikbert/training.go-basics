@@ -134,7 +134,6 @@ das Ergebnis ausgeben.
 Implementieren Sie einen **Stack** von `string` Werten mithilfe eines Slice.
 
 Dieser soll folgende Funktionen implementieren:
-
 * `push()` -- hier wird ein Wert auf den Stack gelegt
 * `pop()` -- es wird ein Wert von oben vom Stack genommen
 * `peek()` -- das oberste Element wird ausgegeben
@@ -158,7 +157,7 @@ Bitte beachten, dass die ISBN je Buch eindeutig ist, aber Autor und Verlag nicht
 Und Achtung, da hat sich ein Tippfehler im vorgegebenen Code eingeschlichen...
 
 **Bonus:** Gruppieren Sie die Bücher nach Autor und Verlag. Nutzen Sie hierfür eine jeweils per Closure erstellte
-Funktion, die den Gruppierungsschlüssel (key) aus einem Buch extrahiert.
+Funktion, die den Gruppierungsschlüssel (key) aus einem Buch extrahiert. 
 
 ## q) OO-Design
 
@@ -169,3 +168,6 @@ Erstellen Sie ein Struct `Bookshelf`, welches folgende Methoden anbietet:
 * `all() []books`
 
 Fügen Sie dort die vordefinierten Bücher ein und fragen diese via des Bookshelfs ab.
+
+**Bonus:** Refactoren Sie Ihre `Stack` Implementierung in eine objektorientierte Variante.
+Aber Achtung, es gibt keinen Konstruktor in Go.
