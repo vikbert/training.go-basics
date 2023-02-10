@@ -165,14 +165,16 @@ zwei Ausprägungen existiert hat.
 
 ## q) OO-Design
 
-Erstellen Sie ein Struct `Bookshelf`, welches folgende Methoden anbietet:
+Erstellen Sie ein `Bookshelf` Struct (Klasse), welches folgende Methoden anbietet:
 
 * `add(b book)`
-* `forIsbn(isbn string) books`
+* `forIsbn(isbn string) book`
 * `all() []books`
 
-Fügen Sie dort die vordefinierten Bücher ein und fragen diese via des Bookshelfs ab.
+Erzeugen Sie eine Instanz des Bookshelfs.
 
-**Bonus:** Refaktorieren Sie Ihre `Stack` Implementierung in eine objektorientierte Variante.
+Fügen Sie dort die vordefinierten Bücher ein und fragen diese dann einzeln bzw. gesamthaft ab.
+
+**Bonus:** Refaktorieren Sie Ihre `Stack` Implementierung aus dem Abschnitt "Slices" in eine objektorientierte Variante.
 Aber Achtung, es gibt keinen Konstruktor in Go. Falls Sie einen benötigen, so muss eine `newStack()` Funktion
 herhalten.
