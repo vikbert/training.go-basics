@@ -9,7 +9,7 @@ type book struct {
 }
 
 func main() {
-	fmt.Println("OO-Design:")
+	fmt.Println("Methods:")
 	books := [5]book{
 		{"123-456", "A. Hendker", "Wort und Bild Verlag"},
 		{"345-476", "T. Müller", "Random House"},

@@ -162,19 +162,3 @@ erstellte Funktion, die den Gruppierungsschlüssel (key) aus jedem Buch extrahie
 Wir wollen damit erreichen, dass die (sehr hohe) Code-Duplizierung der `groupBy...()` Funktionen entfällt. Die
 Key-Extractor Funktion übernimmt dann in der neuen `groupBy()` Funktion die Individualisierung, die bisher in den
 zwei Ausprägungen existiert hat.
-
-## q) OO-Design
-
-Erstellen Sie ein `Bookshelf` Struct (Klasse), welches folgende Methoden anbietet:
-
-* `add(b book)`
-* `forIsbn(isbn string) book`
-* `all() []books`
-
-Erzeugen Sie eine Instanz des Bookshelfs.
-
-Fügen Sie dort die vordefinierten Bücher ein und fragen diese dann einzeln bzw. gesamthaft ab.
-
-**Bonus:** Refaktorieren Sie Ihre `Stack` Implementierung aus dem Abschnitt "Slices" in eine objektorientierte Variante.
-Aber Achtung, es gibt keinen Konstruktor in Go. Falls Sie einen benötigen, so muss eine `newStack()` Funktion
-herhalten.
