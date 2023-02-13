@@ -18,6 +18,8 @@ Fügen Sie dort die in `main.go` vordefinierten Bücher ein und fragen diese dan
 
 Refaktorieren Sie Ihre `Stack` Implementierung aus dem Abschnitt "020/Slices" in eine objektorientierte Variante.
 
+Machen Sie die Implementierung in einer Datei `stack\stack.go` (d.h. in Unterverzeichnis) mit Package "stack".
+
 Aber Achtung, es gibt keinen Konstruktor in Go. Falls Sie einen benötigen, so muss eine `newStack()` Funktion
 herhalten.
 
