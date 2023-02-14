@@ -25,8 +25,10 @@ loslaufen zu lassen.
 
 ## e) Entweder Oder
 
-Starten Sie eine Goroutine, die jede Sekunde einen `int` Wert in einen Kanal schreibt.
+Starten Sie eine Goroutine, die alle 800 ms einen `int` Wert in einen Kanal schreibt.
 
-Starten Sie eine andere Goroutine, die alle zwei Sekunden einen `string` in einen anderen Kanal schreibt.
+Starten Sie eine andere Goroutine, die alle 1100 ms einen `string` in einen anderen Kanal schreibt.
 
 In der `main()` Methode nutzen Sie ein `select`, um entweder auf die eine oder auf die andere Nachricht zu reagieren.
+
+Ihre Anwendung wird endlos laufen, Sie können diese u.a. mit CTRL+C abbrechen.
