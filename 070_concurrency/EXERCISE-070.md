@@ -22,3 +22,11 @@ Wie wissen wir, wann jede Goroutine bereit ist? Mögliche Optionen, von einfach 
 
 In jedem Fall schreiben wir dann in den Startsignal-Channel Werte, um jede Goroutine nahezu gleichzeitig
 loslaufen zu lassen.
+
+## e) Entweder Oder
+
+Starten Sie eine Goroutine, die jede Sekunde einen `int` Wert in einen Kanal schreibt.
+
+Starten Sie eine andere Goroutine, die alle zwei Sekunden einen `string` in einen anderen Kanal schreibt.
+
+In der `main()` Methode nutzen Sie ein `select`, um entweder auf die eine oder auf die andere Nachricht zu reagieren.
