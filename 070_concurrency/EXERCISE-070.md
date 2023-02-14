@@ -8,9 +8,17 @@ Dieser Wert soll in der `main()` Funktion ausgelesen und ausgegeben werden.
 
 ## b) Gemeinsamer Start
 
-Lassen Sie drei Goroutinen starten, die eine zufällige Anzahl von 1 - 5 Sekunden brauchen, bis diese einsatzbereit sind.
-Dazu können Sie die fertige Funktion `startup()` nutzen.
+Lassen Sie drei Goroutinen starten, die eine zufällige Anzahl von 1 - 10 Sekunden brauchen, bis diese einsatzbereit
+sind. Dazu können Sie die fertige Funktion `startup()` nutzen.
 
-Sobald jede Goroutine bereit ist, soll sie auf ein gemeinsames Startsignal (Channel!) warten und dann ein "X" ausgeben.
+Sobald jede Goroutine bereit ist, soll sie auf ein gemeinsames Startsignal (mittels Channel) warten und dann
+die aktuelle Zeit ausgeben.
 
-In der `main()` Methode schreiben Sie in den Channel, um jeder Goroutine das Startsignal zu geben.
+Wie wissen wir, wann jede Goroutine bereit ist? Mögliche Optionen, von einfach nach kompliziert:
+
+1. in `main()` einfach viele Sekunden warten
+2. Oder man löst es mit einer `sync.WaitGroup`
+3. Oder mit einem zusätzlichen Kanal
+
+In jedem Fall schreiben wir dann in den Startsignal-Channel Werte, um jede Goroutine nahezu gleichzeitig
+loslaufen zu lassen.
