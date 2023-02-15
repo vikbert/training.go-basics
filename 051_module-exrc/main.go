@@ -1,1 +1,1 @@
-package _51_module_exrc
+package main
