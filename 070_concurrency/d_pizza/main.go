@@ -62,10 +62,10 @@ var (
 
 var (
 	pizzaMargarita = Pizza{
-		ingredients: []*Ingredient{dough1, tomatoSauce1, gratedCheese1},
+		[]*Ingredient{dough1, tomatoSauce1, gratedCheese1}, 10,
 	}
 	pizzaSalamiSpecial = Pizza{
-		ingredients: []*Ingredient{dough2, tomatoSauce2, gratedCheese2, salami2, onions2},
+		[]*Ingredient{dough2, tomatoSauce2, gratedCheese2, salami2, onions2}, 12,
 	}
 )
 
