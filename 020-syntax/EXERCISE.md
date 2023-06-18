@@ -66,9 +66,9 @@ nun sowohl den kleinsten als auch den größten Wert zurückgibt.
 Wir wollen wissen, ob heute Wochenende ist (okay, recht unwahrscheinlich während des Trainings).
 
 Dazu bitte im StdLib Package "time" (https://pkg.go.dev/time) die Funktion `Now()` und `Weekday()` anschauen. Ebenso
-gibt es dort Konstanten für die einzelnen Wochentage.
+gibt es dort Konstanten für die einzelnen Wochentage (welchen Typ haben diese?).
 
-Schreiben Sie eine switch Anweisung, die für den heutigen Tag ausgibt, ob es Wochenende ist oder nicht.
+Schreiben Sie eine `switch` Anweisung, die für den heutigen Tag ausgibt, ob es gerade Wochenende ist oder nicht.
 
 ## h) Strings und Runes
 
@@ -83,7 +83,7 @@ Hilfreich sind die StdLib Packages "strings" und "unicode".
 
 ### kebap-case / snake-case
 
-Ergänzend können Sie eine Transformation in Kebap Case vornehmen: "heute-lerne-ich-go"
+Ergänzend können Sie eine Transformation in Kebab-Case vornehmen: "heute-lerne-ich-go"
 
 ## i) Structs
 
