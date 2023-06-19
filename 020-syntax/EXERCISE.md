@@ -54,10 +54,12 @@ Deklarieren Sie ein Array von Zahlen, z.B. `int` oder `float32`.
 Schreiben Sie eine Funktion, welche das Array als Parameter annimmt und
 die Summe aller Zahlen zurückgibt.
 
+Wenn Sie ein `float32` Array nehmen, dann könnten Sie z.B. 10-mal die 0.1 addieren lassen. Was kommt da raus?
+
 ## f) If Abfragen
 
 Schreiben Sie eine Funktion, welche für das Array von Zahlen (siehe oben)
-nun sowohl den kleinsten wie auch den größten Wert zurückgibt.
+nun sowohl den kleinsten als auch den größten Wert zurückgibt.
 
 ## g) Switch
 
