@@ -24,7 +24,7 @@ repräsentierten Bytes deklariert.
 
 Nutzen Sie hierfür `iota` zur automatischen Berechnung.
 
-Tipp: mit `1 << 10` shiften Sie eine bestehende Zahl um 10 bits nach vorne
+Tipp: es gibt einen Bit-Shift Operator
 
 ## b) Pointers
 
