@@ -143,8 +143,8 @@ Implementieren Sie einen **Stack** von `string` Werten mithilfe eines Slice.
 Der Stack soll über folgende Funktionen genutzt werden können:
 
 * `push` -- hier wird ein Wert auf den Stack gelegt
-* `pop` -- es wird ein Wert von oben vom Stack genommen
-* `peek` -- das oberste Element wird ausgegeben
+* `pop` -- es wird ein Wert von oben vom Stack genommen und ausgeben
+* `peek` -- das oberste Element wird ausgegeben ohne den Stack zu verändern
 
 ## p) Maps
 
