@@ -124,7 +124,7 @@ Welche Signatur (d.h. Parameterdeklarationen) muss diese Funktion haben?
 Deklarieren Sie einen Funktionstyp mit folgender Signatur:
 
 ````go
-funct(int, int) int
+func(int, int) int
 ````
 
 Implementieren Sie diese Funktion in mehreren Varianten:
