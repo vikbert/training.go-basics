@@ -87,7 +87,9 @@ Ergänzend können Sie eine Transformation in Kebab-Case vornehmen: "heute-lerne
 
 ## i) Structs
 
-Sie möchten folgendes JSON (mittels eines Structs) erzeugen:
+Als Entwickler sind Sie mit einer JSON Schnittstelle konfrontiert, die etwas unschöne Attributnamen verwendet.
+
+Mit Go möchten Sie nun (mittels eines Structs) das folgende JSON erzeugen:
 
 ````json
 {
@@ -109,10 +111,12 @@ Exportieren Sie den Struct in JSON mit `json.Marshal(p1)` -- aber Achtung, es gi
 
 ## j) Variadische Funktionen
 
-Schreiben Sie eine Funktion, die alle übergebenen `int` Werte verdoppelt. Es soll kein Array übergeben werden,
-sondern einzelne Werte!
+Schreiben Sie eine Funktion, die alle übergebenen `int` Werte verdoppelt, sodass sich diese Werte in
+der **aufrufenden** Funktion auch verändern.
 
-Welche Signatur muss diese Funktion haben?
+Es soll kein Array übergeben werden, sondern einzelne Werte! Ebenso darf kein Wert zurückgegeben werden.
+
+Welche Signatur (d.h. Parameterdeklarationen) muss diese Funktion haben?
 
 ## l) First Class Citizen Functions
 
