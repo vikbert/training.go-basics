@@ -87,7 +87,7 @@ Ergänzend können Sie eine Transformation in Kebab-Case vornehmen: "heute-lerne
 
 ## i) Structs
 
-Sie möchten folgendes JSON mit Structs verarbeiten:
+Sie möchten folgendes JSON (mittels eines Structs) erzeugen:
 
 ````json
 {
