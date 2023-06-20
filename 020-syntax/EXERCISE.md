@@ -140,7 +140,7 @@ das Ergebnis ausgeben.
 
 Implementieren Sie einen **Stack** von `string` Werten mithilfe eines Slice.
 
-Dieser soll folgende Funktionen implementieren:
+Der Stack soll über folgende Funktionen genutzt werden können:
 
 * `push` -- hier wird ein Wert auf den Stack gelegt
 * `pop` -- es wird ein Wert von oben vom Stack genommen
