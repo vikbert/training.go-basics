@@ -15,9 +15,10 @@ func main() {
 		{"345-476", "T. Müller", "Random House"},
 		{"133-898", "I. Wellmann", "Random House"},
 		{"423-001", "I. Wellmann", "Random House"},
-		{"193-753", "T, Müller", "Wort und Bild Verlag"},
+		{"193-753", "T. Müller", "Wort und Bild Verlag"},
 	}
 	fmt.Println(books)
+	//indexBooksByIsbn()
 	//groupBooksByAuthor()
 	//groupBooksByPublisher()
 }
