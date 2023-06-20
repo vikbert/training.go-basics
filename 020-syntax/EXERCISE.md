@@ -112,7 +112,8 @@ Exportieren Sie den Struct in JSON mit `json.Marshal(p1)` -- aber Achtung, es gi
 ## j) Variadische Funktionen
 
 Schreiben Sie eine Funktion, die alle übergebenen `int` Werte verdoppelt, sodass sich diese Werte in
-der **aufrufenden** Funktion auch verändern.
+der **aufrufenden** Funktion auch verändern. Anders gesagt: Jeder einzelne übergebene Wert soll am Ort 
+seiner Deklaration verdoppelt worden sein.
 
 Es soll kein Array übergeben werden, sondern einzelne Werte! Ebenso darf kein Wert zurückgegeben werden.
 
