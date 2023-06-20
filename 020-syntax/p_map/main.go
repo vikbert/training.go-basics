@@ -18,7 +18,6 @@ func main() {
 		{"193-753", "T, Müller", "Wort und Bild Verlag"},
 	}
 	fmt.Println(books)
-	//groupBooksByIsbn()
 	//groupBooksByAuthor()
 	//groupBooksByPublisher()
 }

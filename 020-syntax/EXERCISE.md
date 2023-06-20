@@ -154,15 +154,10 @@ Angenommen es gibt ein Struct mit den Attributen
 * author (string)
 * publisher (string)
 
-Schreiben Sie Funktionen (`groupByAuthor()` und `groupByPublisher()`), welche die Bücher in einer Map gruppieren lässt:
+Schreiben Sie Funktionen, welche die Bücher in einer Map gruppiert (je Key mehrere Bücher):
 
-* nach ISBN
-* nach Autor
-* nach Verlag
-
-Bitte beachten, dass die ISBN je Buch eindeutig ist, aber Autor und Verlag nicht!
-
-Und Achtung, da hat sich ein Tippfehler im vorgegebenen Code eingeschlichen...
+* nach Autor (`groupBooksByAuthor()`)
+* nach Verlag (`groupBooksByPublisher()`)
 
 **Bonus:** Gruppieren Sie die Bücher erneut nach Autor und Verlag. Nutzen Sie jetzt aber eine jeweils per Closure
 erstellte Funktion, die den Gruppierungsschlüssel (key) aus jedem Buch extrahiert und für die Gruppierung als Key nimmt.
