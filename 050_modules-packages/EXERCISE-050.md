@@ -45,7 +45,7 @@ verwenden.
 ## d) Experimentelles Package nutzen
 
 Schauen Sie sich den Code in `050_modules-packages/main.go` an -- sowie das experimentelle
-Package https://pkg.go.dev/golang.org/x/exp/slices.
+Modul "pkg.go.dev/golang.org/x/exp" mit dem Package "slices": https://pkg.go.dev/golang.org/x/exp
 
 Dort gibt es eine Funktion zum Vergleichen zweier Slices.
 
