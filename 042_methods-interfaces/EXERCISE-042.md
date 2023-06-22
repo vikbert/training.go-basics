@@ -17,7 +17,7 @@ Fügen Sie dort die in `main.go` vordefinierten Bücher ein und fragen diese dan
 ### Stack (Bonusaufgabe)
 
 Kopieren Sie Ihre Stack-Implementierung aus dem Verzeichnis `020-syntax/o_slices` hierher in eine Datei
-`025_methods-interfaces/stack/stack.go`. 
+`042_methods-interfaces/stack/stack.go`. 
 
 Ändern Sie den Package-Namen auf "stack".
 
