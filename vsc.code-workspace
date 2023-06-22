@@ -21,8 +21,8 @@
 			"path": "040_testing"
 		},
 		{
-			"name": "050_modules-packages",
-			"path": "050_modules-packages"
+			"name": "022_modules-packages",
+			"path": "022_modules-packages"
 		},
 		{
 			"name": "051_module-exrc",

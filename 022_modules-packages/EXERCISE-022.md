@@ -9,7 +9,7 @@ Tipps:
 
 Entwickeln Sie eine kleine Go-Anwendung, welche das Modul https://github.com/google/uuid nutzt.
 
-Nutzen Sie dafür das vorhandene Verzeichnis `051_module-exrc`.
+Hierfür müssen Sie irgendwo einen neuen Ordner anlegen.
 
 Ihre Anwendung benötigt eine `go.mod` Datei, welche Sie mittels `go mod init` dort erzeugen lassen. Da wir eine lokale
 Anwendung entwickeln, ist der Pfad nicht von Bedeutung.
@@ -44,7 +44,7 @@ verwenden.
 
 ## d) Experimentelles Package nutzen
 
-Schauen Sie sich den Code in `050_modules-packages/main.go` an -- sowie das experimentelle
+Schauen Sie sich den Code in `022_modules-packages/main.go` an -- sowie das experimentelle
 Modul "pkg.go.dev/golang.org/x/exp" mit dem Package "slices": https://pkg.go.dev/golang.org/x/exp
 
 Dort gibt es eine Funktion zum Vergleichen zweier Slices.

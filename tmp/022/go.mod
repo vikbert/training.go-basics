@@ -1,4 +1,4 @@
-module local/050_std-libs/example-tool
+module local/022_std-libs/example-tool
 
 go 1.19
 
