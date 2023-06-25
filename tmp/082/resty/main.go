@@ -13,7 +13,7 @@ func main() {
 	type GetPostsResult struct {
 		// ...
 	}
-	rsp, err := client.R().
+	rsp, _ := client.R().
 		SetQueryString("details=true&page=1").
 		SetAuthToken("BC594900518B4F7EAC75BD37F019E08FBC594900518B4F7EAC75BD37F019E08F").
 		SetResult(GetPostsResult{}).
@@ -21,7 +21,7 @@ func main() {
 	fmt.Println(rsp.Status())
 	fmt.Println(string(rsp.Body()[0:100]))
 
-	rsp, err = client.R().
+	rsp, _ = client.R().
 		SetBody(`{"productId":"S-123", "name":"Pizza Funghi"}`).
 		Post("https://myapp.com/login")
 }
