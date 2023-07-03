@@ -8,10 +8,21 @@ import (
 func main() {
 	fmt.Println("Switch:")
 
-	switch weekday := time.Now().Weekday(); weekday {
+	isAtWeekend, weekday := isWeekend()
+	if isAtWeekend {
+		fmt.Printf("Today (%s) is weekend\n", weekday.String())
+	} else {
+		fmt.Printf("Today (%s) is NOT weekend\n", weekday.String())
+	}
+}
+
+func isWeekend() (bool, time.Weekday) {
+	weekday := time.Now().Weekday()
+
+	switch weekday {
 	case time.Saturday, time.Sunday:
-		fmt.Println("is weekend")
+		return true, weekday
 	default:
-		fmt.Println("is not weekend")
+		return false, weekday
 	}
 }
