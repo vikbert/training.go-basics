@@ -4,20 +4,20 @@
 
 ## a) Variablen & Konstanten
 
-### Variablen
+### ✅Variablen
 
 Deklarieren Sie auf verschiedene Weisen Variablen.
 
 Welche Zuweisungen von einer zu anderen gehen, welche nicht?
 
-### Konstanten
+### ✅ Konstanten
 
 Deklarieren Sie nicht-gruppierte und gruppierte Konstanten.
 
 Experimenten Sie mit untypisierten Konstanten (z.B. `const x = 1`) und welchen typisierten Variablen diese zugewiesen
 werden kann.
 
-### Iota
+### ✅ Iota
 
 Schreiben Sie eine Gruppe an Konstanten, welche die Werte `KB`, `MB` und `GB` mit der jeweiligen Anzahl an
 repräsentierten Bytes deklariert.
@@ -28,12 +28,12 @@ Tipp: es gibt einen Bit-Shift Operator
 
 ## b) Pointers
 
-### miniSort
+### ✅ miniSort
 
 Verändern Sie die Funktion `miniSort` und deren Aufruf derart, dass die gewünschte Ausgabe
 erfolgt.
 
-## c) Types
+## ✅ c) Types
 
 Wir wollen Zentimeter in Meter umwandeln können -- und dafür eigene Typen haben, wie z.B.
 
@@ -47,7 +47,7 @@ Schreiben Sie eine Funktion, die Zentimeter in Meter umrechnet.
 
 Geben Sie das Ergebnis aus, sodass der gewünschte Output erfolgt.
 
-## e) For Schleifen
+## e) ✅ For Schleifen
 
 Deklarieren Sie ein Array von Zahlen, z.B. `int` oder `float32`.
 
@@ -56,12 +56,12 @@ die Summe aller Zahlen zurückgibt.
 
 Wenn Sie ein `float32` Array nehmen, dann könnten Sie z.B. 10-mal die 0.1 addieren lassen. Was kommt da raus?
 
-## f) If Abfragen
+## f) ✅ If Abfragen
 
 Schreiben Sie eine Funktion, welche für das Array von Zahlen (siehe oben)
 nun sowohl den kleinsten als auch den größten Wert zurückgibt.
 
-## g) Switch
+## g) ✅ Switch
 
 Wir wollen wissen, ob heute Wochenende ist (okay, recht unwahrscheinlich während des Trainings).
 
@@ -70,9 +70,9 @@ gibt es dort Konstanten für die einzelnen Wochentage (welchen Typ haben diese?)
 
 Schreiben Sie eine `switch` Anweisung, die für den heutigen Tag ausgibt, ob es gerade Wochenende ist oder nicht.
 
-## h) Strings und Runes
+## h) ✅ Strings und Runes
 
-### CamelCase
+### CamelCase ✅
 
 Für einen beliebigen String wie z.B. "Heute lerne ich Go" soll die Camel-Case-Variante in der Form "HeuteLerneIchGo"
 berechnet werden.
@@ -81,7 +81,7 @@ Schreiben Sie die dafür notwendige Funktion.
 
 Hilfreich sind die StdLib Packages "strings" und "unicode".
 
-### kebap-case / snake-case
+### kebap-case / snake-case ✅
 
 Ergänzend können Sie eine Transformation in Kebab-Case vornehmen: "heute-lerne-ich-go"
 
