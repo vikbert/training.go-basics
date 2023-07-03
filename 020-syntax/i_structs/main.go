@@ -27,10 +27,10 @@ func main() {
 		},
 	}
 
-	m, err := json.Marshal(p)
+	marshal, err := json.Marshal(p)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
 
-	fmt.Println(string(m))
+	fmt.Println(string(marshal))
 }

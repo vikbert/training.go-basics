@@ -85,7 +85,7 @@ Hilfreich sind die StdLib Packages "strings" und "unicode".
 
 Ergänzend können Sie eine Transformation in Kebab-Case vornehmen: "heute-lerne-ich-go"
 
-## i) Structs
+## i) Structs ✅
 
 Als Entwickler sind Sie mit einer JSON Schnittstelle konfrontiert, die etwas unschöne Attributnamen verwendet.
 
