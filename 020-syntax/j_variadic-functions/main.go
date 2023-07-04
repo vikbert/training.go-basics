@@ -5,16 +5,12 @@ import "fmt"
 func main() {
 	fmt.Println("Variadic Functions:")
 
-	fmt.Println("1 2 3")
-	fmt.Println("sumWithDuplication: ", sumWithDuplication(1, 2, 3))
+	a, b, c := 1, 1, 1
+	fmt.Println("a, b, c", a, b, c)
+	doubleVars(&a, &b, &c)
+	fmt.Println("a, b, c", a, b, c)
 }
 
-func sumWithDuplication(numbers ...int) int {
-	total := 0
-	for _, value := range numbers {
-		value = value * 2
-		total += value
-	}
-
-	return total
+func doubleVars(pointers ...*int) {
+	//TODO
 }

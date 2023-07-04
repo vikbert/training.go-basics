@@ -12,13 +12,13 @@ func main() {
 	myStack.Push(1)
 	myStack.Push(2)
 
-	fmt.Println("Slices:", myStack)
-	fmt.Println("Slices::Pop:", myStack.Pop())
-	fmt.Println("Slices:", myStack)
-	fmt.Println("Slices::Peek:", myStack.Peek())
-	fmt.Println("Slices:", myStack)
-	fmt.Println("Slices::Size:", myStack.Size())
-	fmt.Println("Slices::IsEmpty:", myStack.IsEmpty())
+	fmt.Println("Stack:", myStack)
+	fmt.Println("Stack::Pop:", myStack.Pop())
+	fmt.Println("Stack:", myStack)
+	fmt.Println("Stack::Peek:", myStack.Peek())
+	fmt.Println("Stack:", myStack)
+	fmt.Println("Stack::Size:", myStack.Size())
+	fmt.Println("Stack::IsEmpty:", myStack.IsEmpty())
 }
 
 func (s *SliceStack) Push(value interface{}) {
