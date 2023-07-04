@@ -2,20 +2,16 @@ package main
 
 import "fmt"
 
-type mathFunc func(int, int) int
+type operatorFunc func(int, int) int
 
 func main() {
 	fmt.Println("1st class Functions:")
 
-	var add mathFunc = func(a int, b int) int {
-		return a + b
-	}
+	var sum operatorFunc = func(a int, b int) int { return a + b }
 
-	var sub mathFunc = func(a int, b int) int {
-		return a - b
-	}
+	var minus operatorFunc = func(a int, b int) int { return a - b }
 
-	var mul = func(a int, b int, add mathFunc) int {
+	var multiply = func(a int, b int, add operatorFunc) int {
 		result := 0
 		for i := 0; i < b; i++ {
 			result = add(result, a)
@@ -23,7 +19,7 @@ func main() {
 		return result
 	}
 
-	fmt.Println("1 + 1 = ", add(1, 1))
-	fmt.Println("1 - 1 = ", sub(1, 1))
-	fmt.Println("1 * 0 = ", mul(1, 0, add))
+	fmt.Println("1 + 1 = ", sum(1, 1))
+	fmt.Println("1 - 1 = ", minus(1, 1))
+	fmt.Println("2 * 3 = ", multiply(2, 3, sum))
 }
