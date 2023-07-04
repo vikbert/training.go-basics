@@ -9,18 +9,14 @@ type book struct {
 	author    string
 	publisher string
 }
+
 type bookMap struct {
-	books map[string]book
+	books []book
 }
 
 func createBookMap(books []book) *bookMap {
-	bMap := make(map[string]book)
-	for _, book := range books {
-		bMap[book.isbn] = book
-	}
-
 	return &bookMap{
-		books: bMap,
+		books: books,
 	}
 }
 
@@ -36,53 +32,29 @@ func main() {
 
 	myMap := createBookMap(books[:])
 	fmt.Println("Book by isbn 193-753: ", myMap.getBookByIsbn("193-753"))
-	fmt.Println("\nGroup via normal func:\n")
-	fmt.Println("Book grouped by author: \n", myMap.groupBooksByAuthor())
-	fmt.Println("Book grouped by publisher: \n", myMap.groupBooksByPublisher())
 
 	fmt.Println("\nGroup via Closure func:\n")
-	fmt.Println("Book grouped by publisher: \n", myMap.groupBooksWithClosure(authorKeyMatcher()))
-	fmt.Println("Book grouped by author: \n", myMap.groupBooksWithClosure(publisherKeyMatcher()))
+	resolveAuthor := func(b book) string { return b.author }
+	resolvePublisher := func(b book) string { return b.publisher }
+	fmt.Println("Book grouped by publisher: \n", myMap.groupBookByDefinition(resolveAuthor))
+	fmt.Println("Book grouped by author: \n", myMap.groupBookByDefinition(resolvePublisher))
 }
 
 func (m *bookMap) getBookByIsbn(isbn string) book {
-	return m.books[isbn]
-}
-
-func (m *bookMap) groupBooksByAuthor() map[string][]book {
-	groupByAuthor := make(map[string][]book)
+	bMap := make(map[string]book)
 	for _, book := range m.books {
-		groupByAuthor[book.author] = append(groupByAuthor[book.author], book)
+		bMap[book.isbn] = book
 	}
 
-	return groupByAuthor
+	return bMap[isbn]
 }
 
-func (m *bookMap) groupBooksByPublisher() map[string][]book {
-	groupByAuthor := make(map[string][]book)
+func (m *bookMap) groupBookByDefinition(fn func(book) string) map[string][]book {
+	booksMap := make(map[string][]book)
 	for _, book := range m.books {
-		groupByAuthor[book.publisher] = append(groupByAuthor[book.publisher], book)
+		groupKey := fn(book)
+		booksMap[groupKey] = append(booksMap[groupKey], book)
 	}
 
-	return groupByAuthor
-}
-
-func (m *bookMap) groupBooksWithClosure(keyMapper groupByFunc) map[string][]book {
-	groupByAuthor := make(map[string][]book)
-	for _, book := range m.books {
-		matchedKey := keyMapper(book)
-		groupByAuthor[matchedKey] = append(groupByAuthor[matchedKey], book)
-	}
-
-	return groupByAuthor
-}
-
-type groupByFunc func(b book) string
-
-func authorKeyMatcher() groupByFunc {
-	return func(b book) string { return b.author }
-}
-
-func publisherKeyMatcher() groupByFunc {
-	return func(b book) string { return b.publisher }
+	return booksMap
 }
