@@ -25,5 +25,5 @@ func main() {
 
 	fmt.Println("1 + 1 = ", add(1, 1))
 	fmt.Println("1 - 1 = ", sub(1, 1))
-	fmt.Println("2 * 3 = ", mul(2, 3, add))
+	fmt.Println("1 * 0 = ", mul(1, 0, add))
 }
