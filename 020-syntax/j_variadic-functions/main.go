@@ -6,11 +6,13 @@ func main() {
 	fmt.Println("Variadic Functions:")
 
 	a, b, c := 1, 1, 1
-	fmt.Println("a, b, c", a, b, c)
+	fmt.Println("a, b, c: ", a, b, c)
 	doubleVars(&a, &b, &c)
-	fmt.Println("a, b, c", a, b, c)
+	fmt.Println("a, b, c: ", a, b, c)
 }
 
 func doubleVars(pointers ...*int) {
-	//TODO
+	for _, ptr := range pointers {
+		*ptr *= 2
+	}
 }
