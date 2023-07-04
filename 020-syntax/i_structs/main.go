@@ -27,10 +27,10 @@ func main() {
 		},
 	}
 
-	marshal, err := json.Marshal(p)
+	bytes, err := json.MarshalIndent(p, "", "\t")
 	if err != nil {
 		fmt.Println(err.Error())
 	}
 
-	fmt.Println(string(marshal))
+	fmt.Println(string(bytes))
 }
