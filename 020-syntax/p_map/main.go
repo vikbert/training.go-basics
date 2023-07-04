@@ -35,7 +35,7 @@ func main() {
 	}
 
 	myMap := createBookMap(books[:])
-	fmt.Println("Book by isbn 193-753: ", myMap.indexBooksByIsbn("193-753"))
+	fmt.Println("Book by isbn 193-753: ", myMap.getBookByIsbn("193-753"))
 	fmt.Println("\nGroup via normal func:\n")
 	fmt.Println("Book grouped by author: \n", myMap.groupBooksByAuthor())
 	fmt.Println("Book grouped by publisher: \n", myMap.groupBooksByPublisher())
@@ -45,7 +45,7 @@ func main() {
 	fmt.Println("Book grouped by author: \n", myMap.groupBooksWithClosure(publisherKeyMatcher()))
 }
 
-func (m *bookMap) indexBooksByIsbn(isbn string) book {
+func (m *bookMap) getBookByIsbn(isbn string) book {
 	return m.books[isbn]
 }
 
