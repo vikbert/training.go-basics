@@ -2,60 +2,31 @@ package main
 
 import (
 	"fmt"
-	"reflect"
-	"strconv"
+	"local/042_methods-interfaces/c_interfaces/interfaces"
 )
-
-type Parser interface {
-	parse(string) int
-}
-
-type Formatter interface {
-	format(int) string
-}
-
-type BinaryFormatter struct{}
-type BinaryParser struct{}
-
-func (bf BinaryParser) parse(s string) int {
-	value, err := strconv.ParseInt(s, 2, 64)
-	if err != nil {
-		panic("Faided to convert string to binary")
-	}
-
-	fmt.Println("binary value", value)
-	return int(value)
-}
-
-func (bf BinaryFormatter) format(i int) string {
-	formatInt := strconv.FormatInt(int64(i), 2)
-	fmt.Println("int value", formatInt)
-	return formatInt
-}
 
 func main() {
 	fmt.Println("Interfaces:")
-	var formatter Formatter = BinaryFormatter{}
-	var parser Parser = BinaryParser{}
 
-	check(8, formatter, parser)
+	fmt.Println("\nFirst case:", "\n--------")
+	var f1 interfaces.Formatter = BinaryFormatter{}
+	var p1 interfaces.Parser = BinaryParser{}
+	check(42, f1, p1)
 
-	printMethods(parser)
-	fmt.Println("Done")
+	fmt.Println("\nSecond case:", "\n--------")
+	var f2 interfaces.Formatter = BarFormatter{}
+	var p2 interfaces.Parser = BarParser{}
+	check(42, f2, p2)
+
+	fmt.Println("\nLoggerParser case:", "\n--------")
+	var f3 interfaces.Formatter = BinaryFormatter{}
+	var p3 interfaces.Parser = LoggerParser{}
+	check(42, f3, p3.(interfaces.Parser))
 }
 
-func check(n int, f Formatter, p Parser) {
-	out := p.parse(f.format(n))
+func check(n int, f interfaces.Formatter, p interfaces.Parser) {
+	out := p.Parse(f.Format(n))
 	if out != n {
 		panic(fmt.Sprintf("got %d, wanted %d", out, n))
-	}
-}
-
-func printMethods(target any) {
-	t := reflect.TypeOf(&target)
-
-	for i := 0; i < t.NumMethod(); i++ {
-		m := t.Method(i)
-		fmt.Println(m.Name)
 	}
 }
