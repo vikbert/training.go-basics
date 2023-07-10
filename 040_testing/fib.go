@@ -10,7 +10,12 @@ func Reset() {
 }
 
 func NextFib() int {
+	if prev == 0 && prevPrev == 0 {
+		prev = 1
+		return 1
+	}
+
 	res := prev + prevPrev
-	prev, prevPrev = res, prevPrev
+	prev, prevPrev = res, prev
 	return res
 }
