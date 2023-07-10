@@ -1,0 +1,8 @@
+github.com/google/uuid v1.3.0 h1:t6JiXgmwXMjEs8VusXIJk2BXHsn+wx8BZdTaoZ5fu7I=
+github.com/google/uuid v1.3.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/vikbert/gophp v0.0.0-20230705083244-e127022e6fce h1:74glKYT6jLhZpMT4Y+fnMX+giv+iT+OIrhivN+RWv0U=
+github.com/vikbert/gophp v0.0.0-20230705083244-e127022e6fce/go.mod h1:MNc28QOPCrcns70FuecBDT6VRnK49/53UbYu+4LMxv8=
+github.com/vikbert/gophp v1.0.0 h1:5pNiQd0C9ueAH0+fxgcndNgPstSHUFMOZBtLbqp2XRU=
+github.com/vikbert/gophp v1.0.0/go.mod h1:MNc28QOPCrcns70FuecBDT6VRnK49/53UbYu+4LMxv8=
+github.com/vikbert/gophp v1.1.0 h1:mx6S6lLfCy6WYfM3sFmqaKeDACmShA6VMNl/C7IyGpI=
+github.com/vikbert/gophp v1.1.0/go.mod h1:MNc28QOPCrcns70FuecBDT6VRnK49/53UbYu+4LMxv8=
