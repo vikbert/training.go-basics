@@ -10,8 +10,7 @@ type LoggerParser struct {
 }
 
 func (lp LoggerParser) Parse(target string) int {
-	p := BinaryParser{}
 	fmt.Printf(">>>>>\n[INFO] string to be parsed: %s\n<<<<<\n", target)
 
-	return p.Parse(target)
+	return lp.Parser.Parse(target)
 }

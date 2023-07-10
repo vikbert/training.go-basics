@@ -20,8 +20,8 @@ func main() {
 
 	fmt.Println("\nLoggerParser case:", "\n--------")
 	var f3 interfaces.Formatter = BinaryFormatter{}
-	var p3 interfaces.Parser = LoggerParser{}
-	check(42, f3, p3.(interfaces.Parser))
+	var p3 interfaces.Parser = LoggerParser{BinaryParser{}}
+	check(42, f3, p3)
 }
 
 func check(n int, f interfaces.Formatter, p interfaces.Parser) {
