@@ -16,9 +16,9 @@ func main() {
 	for {
 		select {
 		case msg1 := <-sChan:
-			fmt.Println("received", msg1)
+			fmt.Printf("received: %s\n\n", msg1)
 		case msg2 := <-iChan:
-			fmt.Println("received", msg2)
+			fmt.Printf("received: %d\n\n", msg2)
 		}
 	}
 
@@ -27,16 +27,16 @@ func main() {
 func writeString(ch chan string) {
 	for {
 		time.Sleep(time.Millisecond * 800)
-		msg := "hello world"
+		msg := "HELLO WORLD"
 		ch <- msg
-		fmt.Println("New message: ", msg)
+		fmt.Println("Writing message: ", msg)
 	}
 }
 
 func writeInteger(ch chan int) {
 	for {
-		time.Sleep(time.Millisecond * 1100)
-		ch <- 999
-		fmt.Println("New number: ", 999)
+		time.Sleep(time.Millisecond * 4100)
+		ch <- 1100
+		fmt.Println("Writing number: ", 1100)
 	}
 }
